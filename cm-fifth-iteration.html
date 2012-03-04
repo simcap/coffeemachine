@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Coffee machine</title>
+	<link href="coffeemachine.css" media="screen" rel="Stylesheet" type="text/css">
+</head>
+<body>
+
+	<div id="main">
+		<div id="header">
+			<h1>Coffee Machine Project</h1>
+			<div id="nav"><a href="coffeemachine.html">home</a></div>
+			
+		</div>
+		<div id="body">
+			<h2>Fifth iteration</h2>
+			<p>The users of the coffee machine are complaining that there is often shortages of water and/or milk. It takes weeks before
+			the machine is refilled.</p>
+			<p>Your product owner wants to you to take advantage of the machine capabilities to inform the user that there is a shortage 
+			and to send a email notification to the company so that they can come and refill the machine.</p>
+			<h2>Use cases</h2>
+			<ul>
+				<li>When I order a drink and it can be delivered because of a shortage, I want to see a message to the coffee machine 
+				console that indicates me the shortage and 
+				that a notification has been sent</li>
+			</ul>
+			<h2>Implementation details</h2>
+			<p>You can take advantages of the 2 services implemented by the coffee machine:</p>
+			<pre>public interface EmailNotificationService {
+	notify(String missing)
+}</pre>
+	<pre>public interface QuantityService {
+	boolean isEmpty(String drink)
+}</pre>
+		<p>Add those two services to your project and use mocking to finish your story.</p>
+		</div>
+		<div id="footer"><a href="cm-fourth-iteration.html">Previous iteration</a></div>
+	</div>
+
+</body>
+</html>

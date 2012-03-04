@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Coffee machine</title>
+	<link href="coffeemachine.css" media="screen" rel="Stylesheet" type="text/css">
+</head>
+<body>
+
+	<div id="main">
+		<div id="header">
+			<h1>Coffee Machine Project</h1>
+			<div id="nav"><a href="coffeemachine.html">home</a></div>
+		</div>
+		<div id="body">
+			<h2>Second iteration</h2>
+			<img src="images/coins.jpeg" width="100" height = "100" style="float: right;"/>
+			
+			<p>The coffee machine is not free anymore! One tea is 0,4 euro, a coffee is 0,6 euro, a chocolate is 0,5 euro.</p>
+			<p>The coffee machine only accepts coins of 10, 20, 50 cents and coins of 1 and 2 euro. The coffee machine has to give back the change to the user.</p>
+			<h2>Use cases</h2>
+			<ul>
+				<li>I want to be able to buy a drink using euro and get the change back</li>
+				<li>If I do not provide enough money, I want it all back and need to see a message saying how much is missing.</li>
+			</ul>
+			<h2>Implementation details</h2>
+			<p>To send a message indicating the missing amount of change you can use the <a href="coffeemachine.html">drink maker protocol</a>.</p>
+			<p>Giving back the exact change is handled by the machine. 
+			All you have to do is send the correct message to the user indicating the missing amount.</p>
+		</div>
+		<div id="footer"><a href="cm-first-iteration.html">Previous iteration</a> | <a href="cm-third-iteration.html">Next iteration</a></div>
+	</div>
+
+</body>
+</html>
