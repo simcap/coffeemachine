@@ -15,22 +15,24 @@
 			<div id="nav"><a href="index.html">home</a></div>
 		</div>
 		<div id="body">
-			<h2>Second iteration</h2>
+			<h2>Second iteration - <em>Free as in free beer ?</em></h2>
 			<img src="images/coins.jpeg" width="100" height = "100" style="float: right;"/>
 			
 			<p>The coffee machine is not free anymore! One tea is 0,4 euro, a coffee is 0,6 euro, a chocolate is 0,5 euro.</p>
-			<p>The coffee machine only accepts coins of 10, 20, 50 cents and coins of 1 and 2 euro. The coffee machine has to give back the change to the user.</p>
+			<p>The drink maker will <strong>now</strong> only make drink if enough money is given for a drink</p>
 			<h2>Use cases</h2>
 			<ul>
-				<li>I want to be able to buy a drink using euro and get the change back</li>
-				<li>If I do not provide enough money, I want it all back and need to see a message saying how much is missing.</li>
+				<li>The drink maker should make the drinks only if the correct amount of money is given for a drink</li>
+				<li>If not enough money is provided, we want to send a message to the drink maker. The message should contains at least the amount of money missing.</li>
 			</ul>
-			<h2>Implementation details</h2>
-			<p>To send a message indicating the missing amount of change you can use the <a href="index.html">drink maker protocol</a>.</p>
-			<p>Giving back the exact change is handled by the machine. 
-			All you have to do is send the correct message to the user indicating the missing amount.</p>
+			
+			<h3>Important</h3>
+			<p>Do not worry about notifyng the customer directly as the drink maker forward any message received onto the coffee machine interface for the customer to see.</p>
+			<p>If too much money is given, the drink maker will make the drink and the machine will handle the return of the correct change. So do not worry about that.</p>
+			<p>Remember that the drink maker will forward any messages received onto the coffee machine interface for the customer to see.</p>
+			
 		</div>
-		<div id="footer"><a href="cm-first-iteration.html">Previous iteration</a> | <a href="cm-third-iteration.html">Next iteration</a></div>
+		<div id="footer">Done... ask your PO for the next iteration</div>
 	</div>
 
 </body>

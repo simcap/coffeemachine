@@ -15,24 +15,34 @@
 			<div id="nav"><a href="index.html">home</a></div>
 		</div>
 		<div id="body">
-			<h2>First iteration</h2>
+			<h2>First iteration - <em>Making drinks</em></h2>
 			<img src="images/coffee-cup.jpeg" width="66" height = "100" style="float: right;"/>
 			
-			<p>In this iteration, your job is to implement the <span class="important">engine</span> 
-			that receives order from the user and that dispatches the command 
-			to the <span class="important">drink maker</span> according to <a href="index.html">drink maker protocol</a>.</p>
-			<p>The coffee machine can serves 3 type of drinks: tea, coffee, chocolate.</p>
+			<p>In this iteration, your task is to implement the logic (starting from a simple class) that translates orders from customers 
+				of the coffee machine to the drink maker. Your code will use the drink maker protocol (see below) to send commands to the drink maker.</p>
+			<p>The coffee machine can serves 3 type of drinks: <em>tea, coffee, chocolate</em>.</p>
 			<h2>Use cases</h2>
 			<p>Your product owner has delivered the stories and here they are:</p>
 			<ul>
-				<li>I want to have a drink served when I pressed the corresponding drink button</li>
-				<li>I want to be able to add one or two sugars</li>
-				<li>When I have some sugar in my drink I want a stick (touillette) with it</li>
+				<li>The drink maker should receive the correct instructions for my coffee / tea / chocolate order</li>
+				<li>I want to be able to send instructions to the drink maker to add one or two sugars</li>
+				<li>When my order contains sugar the drink maker should add a stick (touillette) with it</li>
 			</ul>
+			<h2>Drink maker protocol</h2>
+			<p>The drink maker receives string commands <strong>from your code</strong> to make the drinks. It can also deliver info messages 
+			to the customer if ordered so. The instructions it receives follow this format:</p>
+			<pre>"T:1:0" (Drink maker makes 1 tea with 1 sugar and a stick)</pre>
+			<pre>"H::" (Drink maker makes 1 chocolate with no sugar - 
+				and therefore no stick)</pre>
+			<pre>"C:2:0" (Drink maker makes 1 coffee with 2 sugars and a stick)</pre>
+			<pre>"M:messagecontent" (Drink maker forwards any message received
+				onto the coffee machine interface 
+				for the customer to see)</pre>
+				
 			<h2>Implementation details</h2>
-			<p>The implementation of the user order is up to you. For instance, it could be a bean that contains the order details of the user.</p>
+			<p>You can represent the incoming order of the customer as you wish. For instance, it could be a simple POJO that contains the order details.</p>
 		</div>
-		<div id="footer"><a href="cm-second-iteration.html">Next iteration</a></div>
+		<div id="footer">Finished... ask your PO for the next iteration</div>
 	</div>
 
 </body>

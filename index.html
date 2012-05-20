@@ -16,43 +16,48 @@
 		<div id="body">
 			<h2>Introduction</h2>
 			<img src="images/customer.jpeg" width="100" height = "125" style="float: right;"/>
-			<p>This mini project is used to learn TDD.</p>
+			<p>This mini project is used to learn Test Driven Development.</p>
 			<p>Of course, in your career, you have implemented more complicated stuff than a simple coffe machine that takes orders. But to make this mini project more interesting here are simple rules you <strong>must </strong>follow:</p>
 			
 			<ol>
-				<li>All production code is written to make a failing test pass</li>
-				<li>Do the simplest thing that could work for the current iteration</li>
+				<li><em>All production code is written to make a failing test pass</em></li>
+				<li><em>Do the simplest thing that could work for the current iteration</em></li>
 			</ol>
 			
 			
-			<p>Are you ready? So read your assignement below and start the <a href="cm-first-iteration.html">first iteration</a>. Your product owner is waiting for you!</p>
 			
-			<h2>Project</h2>			
-			<p>The Coffee Machine Project is about the implementation of the <span class="important">engine that receives commands</span> 
-				from the user and that dispatches commands to the <span class="important">drink maker</span> according to the drink maker protocol. 
-			</p>
+			<h2>Project</h2>
+
+			<p>In this Coffe Machine Project, your task is to implement the logic (starting from a simple class) 
+				that translates orders from customers of the coffee machine to the <strong>drink maker</strong>.
+				Your code will use the <strong>drink maker protocol</strong> to send commands to the drink maker.
+			</p>			
+			<h3>Important !</h3>
+			<p><strong>You do not have to implement the coffee machine customer interface.</strong> 
+				For instance, your code could consume a simple POJO that would represent an order from a customer.</p>
+			<p><strong>You do not have to implement the drink maker</strong>. It is only a imaginery engine that will receive messages according to the protocol. 
+				Your job is to build those messages.</p>
 			
-			<p>This project starts simple and grow in added features through the iterations.</p>
-			
-			<h2>Drink maker protocol</h2>
-			<p>The <span class="important">drink maker</span> receives commands to make the drinks and can deliver info messages 
-			to the user. The instructions it receives follow this format:</p>
-			<pre>T:1:0 ==> Drink maker makes 1 tea with 1 sugar and a stick</pre>
-			<pre>H:: ==> Drink maker makes 1 chocolate with no sugar
-	(and therefore no stick)</pre>
-			<pre>C:2:0 ==> Drink maker makes 1 coffee with 2 sugars and a stick</pre>
-			<pre>M:message content ==> Drink maker will forward the message 
-			to the coffee machine console</pre>
-			
-			<h2>Requirements</h2>
-			<p>All you need is:</p>
+			<h3>Iterations</h3>
+			<p>This project starts simple and will grow in added features through the iterations.</p>
 			<ul>
+				<li><u>First iteration</u>: <strong>Making Drinks</strong> (30 minutes)</li>
+				<li><u>Second iteration</u>: <strong>Free as in free beer ?</strong> (20 minutes)</li>
+				<li><u>Third iteration</u>: <strong>Extra hot</strong> (20 minutes)</li>
+				<li><u>Fourth iteration</u>: <strong>Reporting</strong> (20 minutes)</li>
+				<li><u>Fifth iteration</u>: <strong>Notify me</strong> (20 minutes)</li>
+			</ul>	
+			
+			<h2>Ready ?</h2>
+			<h3>Requirements</h3>
+			<ul>
+			 <li>Your favorite IDE or text editor</li>
 			 <li>A testing framework (junit, rspec, ...)</li>
 			 <li>A mocking framework (mockito, ...)</li>
 			 <li>A passion for tested code ;)</li>			 
 			</ul>			
-			
-		<div id="footer"><a href="cm-first-iteration.html">First iteration</a></div>
+			<p>Are you ready? So start the <a href="cm-first-iteration.html">first iteration</a>. Your product owner is waiting for you!</p>
+		<div id="footer"></div>
 	</div>
 
 </body>
