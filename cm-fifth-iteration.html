@@ -16,7 +16,7 @@
 			
 		</div>
 		<div id="body">
-			<h2>Fifth iteration</h2>
+			<h2>Fifth iteration - <em>Running out</em></h2>
 			<p>The users of the coffee machine are complaining that there is often shortages of water and/or milk. It takes weeks before
 			the machine is refilled.</p>
 			<p>Your product owner wants to you to take advantage of the machine capabilities to inform the user that there is a shortage 
@@ -29,10 +29,10 @@
 			</ul>
 			<h2>Implementation details</h2>
 			<p>You can take advantages of the 2 services implemented by the coffee machine:</p>
-			<pre>public interface EmailNotificationService {
-	notify(String missing)
+			<pre>public interface EmailNotifier {
+	void notifyMissingDrink(String drink)
 }</pre>
-	<pre>public interface QuantityService {
+	<pre>public interface BeverageQuantityChecker {
 	boolean isEmpty(String drink)
 }</pre>
 		<p>Add those two services to your project and use mocking to finish your story.</p>
