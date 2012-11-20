@@ -31,6 +31,10 @@ body {
 	text-shadow: #0c0c0c 2px 2px 1px;
 }
 
+#diagram {
+  float:right;
+}
+
 #nav {
   float: right;
   padding: 10px;
